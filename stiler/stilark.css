@@ -225,6 +225,12 @@ img.mathbilde {
   float: none;
 }
 
+/*Bilde på Git-artikkel*/
+img.gitbilde {
+  width: 40%;
+  float: left;
+}
+
 
 /*Stilsette a-tagger*/
 a:link { 
