@@ -7,9 +7,8 @@
 <head>
 
 	<meta charset="UTF-8"> 
-	<title>Artikkelside</title>
+	<title>MathML-artikkel</title>
 	<link rel="stylesheet" type="text/css" href="stiler/stilark.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=MML_CHTML">
 
@@ -38,38 +37,6 @@
 			<br /><br /><br />
 			
 			<h2>MathML:</h2>
-			
-			<math>
-			<semantics>	
-				<mrow>			  
-					<mi>X</mi>		
-					<mo>=</mo>		
-					<mn>45</mn>	     
-					<msup>		 	
-						<mi>a</mi>	
-						<mn>3</mn>
-					</msup>
-				</mrow>
-
-				<annotation-xml encoding="MathML-Content">		 
-					<apply>
-						<eq />
-						<ci>X</ci>
-						<apply>
-							<times/>
-	 	 					<ci>45</ci>
-		 					<apply>
-		 						<power/>
-								<ci>a</ci>
-								<cn>3</cn>
-            				</apply>
-        				</apply>
-   					</apply>
-				</annotation-xml>
-			</semantics>
-			</math>
-
-			<br /><br />
 
 			<p>
 				MathML står for Math Markup Languge. Dette er til for å dekke to formål. En for struktureringen av matematiske utrykk (content) og en for presentasjonen/oppsettet av matematiske utrykk (presentation). (Content brukes for eksempel til taleopplesning.)
@@ -94,6 +61,44 @@
 				<li>- Maskiner kan forstå utrykkene, og kan også generere disse utrykkene</li>
 				<li>- Utrykker settes opp pent og oversiktlig</li>
 			</ul>
+
+			<br />
+
+			<h3>Under er 3 eksempler hvor MathML er brukt (Presentation)</h3>
+			<p>Jeg har brukt en MathML generator <a href="http://www.wiris.com/editor/demo/en/mathml-latex">(Wiris.com)</a> på nett for å få disse</p>
+
+			1. <math xmlns="http://www.w3.org/1998/Math/MathML">
+				<mi>X</mi>		<!-- X -->
+				<mo>=</mo>		<!-- = -->
+				<mn>45</mn>		<!-- Tall - 45 -->
+				<msup>			<!--Noe skal opphøyes i noe-->
+					<mi>a</mi>	<!-- a skal opphøyes i...-->
+					<mn>3</mn>	<!-- 3 -->
+				</msup>
+			</math>
+
+			<br />
+
+			2. <math xmlns="http://www.w3.org/1998/Math/MathML">
+				<msqrt>
+					<mn>4</mn>
+					<mo>+</mo>
+					<mn>8</mn>
+				</msqrt>
+			</math>
+
+			<br />
+
+			3. <math xmlns="http://www.w3.org/1998/Math/MathML">
+				<mfenced>
+					<mrow>
+						<mn>45</mn>
+						<mo>-</mo>
+						<mn>3</mn>
+					</mrow>
+				</mfenced>
+				<mi>x</mi>
+			</math>
 
 		</article>
 
