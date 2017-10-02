@@ -1,0 +1,249 @@
+/* *** FELLES FOR ALLE SIDENE *** */ 
+* { 
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  overflow: scroll;   
+  font-family: arial;
+} 
+
+/*Stilsette a-tagger*/
+a:link { 
+  color: blue; 
+  text-decoration: underline;   
+} 
+a:visited { 
+  color: purple; 
+  text-decoration: underline; 
+} 
+ 
+a:hover { 
+  text-decoration: underline; 
+}  
+ 
+/*SPØRSMÅL: 
+  Hvordan få teksten til å ikke være gjennomsiktig?*/ 
+ 
+/*Header*/ 
+header { 
+  grid-area: header; 
+  background: white; 
+  opacity: 0.3; 
+  padding: 10px; 
+} 
+
+header h1 a:visited, a:link {
+	color: black; 
+	text-decoration: none;
+}
+
+header h1 a:link {
+	color: black; 
+	text-decoration: none;
+}
+ 
+/*Meny*/ 
+nav { 
+  grid-area: nav; 
+  background: white; 
+  opacity: 0.3; 
+  padding-right: 40px; 
+  padding-top: 10px;
+  text-align: right; 
+  font-size: 25px; 
+} 
+ 
+/*Linkstil i meny*/
+nav ul li{ 
+  display: inline-block; 
+  margin-left: 5%;
+} 
+ 
+nav ul li a:link, a:visited{ 
+  color: black; 
+  text-decoration: none;
+} 
+
+nav ul li a:visited{ 
+  color: black; 
+  text-decoration: none;
+} 
+
+nav ul li a:hover{ 
+
+  text-shadow: 1px 1px 1px; 
+  transition-duration: 0.5s;
+  text-decoration: none; 
+} 
+ 
+/*Footer*/ 
+footer { 
+  grid-area: footer; 
+  background: white; 
+  opacity: 0.3; 
+  padding: 10px; 
+} 
+
+ 
+ 
+/* *** FORSIDE*** */ 
+ 
+#master-grid { 
+  width: 100%; 
+  max-width: 1400px; 
+  margin: 0 auto; 
+  background-image: url("../bilder/bakgrund1400.jpeg"); 
+  background-color: black; 
+  background-repeat: no-repeat; 
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 50px auto auto 50px; 
+  grid-template-areas:  "header nav nav" 
+              			    "introtext introtext aside" 
+              			    "artikkel1 artikkel2 artikkel3" 
+              			    "footer footer footer"; 
+} 
+ 
+/*Introtekst*/ 
+div.introtext { 
+  grid-area: introtext; 
+  background: white; 
+  opacity: 0.8; 
+  margin: 150px 5px 10px 40px; 
+  padding: 5px; 
+  text-align: center; 
+} 
+
+/*Bilde i introtekst*/
+.introtext img {
+  width: 80%;
+}
+ 
+/*Aside*/ 
+.aside { 
+  grid-area: aside; 
+  background: white; 
+  opacity: 0.8; 
+  margin: 150px 40px 10px 5px; 
+  padding: 5px; 
+} 
+ 
+.aside h2{ 
+  text-align: center; 
+} 
+ 
+/*Artikler*/ 
+.artikkel1 { 
+  grid-area: artikkel1; 
+  background: white; 
+  opacity: 0.7; 
+  margin: 20px 5px 40px 40px; 
+  padding: 20px; 
+  text-align: center; 
+} 
+ 
+.artikkel2 { 
+  grid-area: artikkel2; 
+  background: white; 
+  opacity: 0.7; 
+  margin: 20px 5px 40px 5px; 
+  padding: 20px; 
+  text-align: center; 
+} 
+ 
+ .artikkel3 { 
+  grid-area: artikkel3; 
+  background: white; 
+  opacity: 0.7; 
+  margin: 20px 40px 40px 5px; 
+  padding: 20px; 
+  text-align: center; 
+} 
+ 
+ 
+ 
+/* *** ARTIKKELSIDER *** */ 
+ 
+#master-gridartikkel { 
+  width: 100%; 
+  max-width: 1400px;
+  min-height: 700px; 
+  margin: 0 auto; 
+  background-image: url("../bilder/bakgrund1400.jpeg"); 
+  background-color: black; 
+  background-repeat: no-repeat; 
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 50px auto 50px; 
+  grid-template-areas:  "header nav nav" 
+              			    "artikkeltext artikkeltext artikkeltext" 
+             			      "footer footer footer"; 
+} 
+/*Artikkel på artikkelside*/ 
+.artikkeltext { 
+  grid-area: artikkeltext; 
+  background: white; 
+  opacity: 0.9; 
+  margin: 20px 20px 20px; 
+  padding: 20px; 
+} 
+
+
+/*På om artikkelsiden og linkearkiv"*/
+table {
+	border: 1px solid black;
+}
+
+th {
+	text-align: center;
+}
+
+tr:nth-child(even) {
+	background: grey;
+}
+
+tr:nth-child(odd) {
+	background: white;
+}
+
+.artikkeltext img {
+  width: 20%;
+  float: right;
+}
+
+/*Bilder på om-siden*/
+img.ombilde1, img.ombilde2 {
+  width: 40%;
+}
+
+
+/*Bilde på Math-artikkel*/
+img.mathbilde {
+  width: 40%;
+  float: none;
+}
+
+
+/*Stilsette a-tagger*/
+a:link { 
+  color: blue; 
+  text-decoration: underline;   
+} 
+a:visited { 
+  color: purple; 
+  text-decoration: underline; 
+} 
+ 
+a:hover { 
+  text-decoration: underline; 
+}   
+ 
+/* *** LINKEARKIV *** */ 
+ 
+ 
+ 
+ 
+ 
+ 

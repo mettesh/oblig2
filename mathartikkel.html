@@ -1,0 +1,111 @@
+<!DOCtype html>
+
+<html lang="nb">
+
+
+
+<head>
+
+	<meta charset="UTF-8"> 
+	<title>Artikkelside</title>
+	<!--<link rel="stylesheet" type="text/css" href="stiler/normalize.css"/> -->
+	<link rel="stylesheet" type="text/css" href="stiler/stilark.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=MML_CHTML">
+
+	</script>
+
+</head>
+
+<body>
+
+	<div id="master-gridartikkel">
+
+		<header>
+			<h1><a href="startside.html">Oblig 2</a></h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="linkearkiv.html">Linkearkiv</a></li>
+			</ul>
+		</nav>
+
+		<article class="artikkeltext">
+
+			<p><a href="startside.html">Startside</a> > MathML</p> <!--Breadcrumbs-->
+
+			<br /><br /><br />
+			
+			<h2>MathML:</h2>
+			
+			<math>
+			<semantics>	
+				<mrow>			  
+					<mi>X</mi>		
+					<mo>=</mo>		
+					<mn>45</mn>	     
+					<msup>		 	
+						<mi>a</mi>	
+						<mn>3</mn>
+					</msup>
+				</mrow>
+
+				<annotation-xml encoding="MathML-Content">		 
+					<apply>
+						<eq />
+						<ci>X</ci>
+						<apply>
+							<times/>
+	 	 					<ci>45</ci>
+		 					<apply>
+		 						<power/>
+								<ci>a</ci>
+								<cn>3</cn>
+            				</apply>
+        				</apply>
+   					</apply>
+				</annotation-xml>
+			</semantics>
+			</math>
+
+			<br /><br />
+
+			<p>
+				MathML står for Math Markup Languge. Dette er til for å dekke to formål. En for struktureringen av matematiske utrykk (content) og en for presentasjonen/oppsettet av matematiske utrykk (presentation). (Content brukes for eksempel til taleopplesning.)
+				<br /><br />
+				MathML er nyttig i kombinasjon med HTML da man enkelt kan forandre oppsettet av det matematiske utrykket rett i HTML-koden. Uten MathML måtte man ha laget et bilde av utrykket som man legger til i koden. Skulle man ha forandret dette utrykket måtte man ha forandret hele bildet i et editorprogram og deretter legge til det nye bilde i HTML-koden.
+				<br /><br />
+				For at nettleserne skal klare å lese utrykket på dette stå I mellom script-taggene: <br />
+				"text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=MML_CHTML"> <br />
+				Selve koden til matteutrykket settes mellom <"math">-tagger.
+				<br /><br />
+			</p>	
+			
+			<h3>Under ser du et oppsett i HTML-koden:</h3>
+			<img class="mathbilde" src="bilder/mathml.png" />
+
+			<br /><br />
+
+			<h3>Bruken og styrken til MathML:</h3>
+			<ul class="mathliste">
+				<li>- Enklere å forandre utrykkene</li>
+				<li>- Koden blir søkbar (Søkemotorer forstår språket)</li>
+				<li>- Maskiner kan forstå utrykkene, og kan også generere disse utrykkene</li>
+				<li>- Utrykker settes opp pent og oversiktlig</li>
+			</ul>
+
+		</article>
+
+		<footer>
+			<p>Les om siden <a href="omsiden.html">her</a></p>
+		</footer>
+
+	</div>
+	
+
+</body>
+
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCtype html>
+
+
+<!-- Oppgave 3
+Lag en "om denne siden"-side som du linker til i bunnteksten (footeren) på nettstedet. Bruk malen til artikkelsiden som grunnstamme for siden. Beskriv planleggingen av nettstedet, tankene/teoriene rundt plassering av elementer og legg inn skissene fra oppgave 1.
+
+Lag en tabell med to kolonner, en for "beskrivelse" og en for "url". List opp sider du har funnet og brukt som inspirasjon med en kort beskrivelse i kolonnen "beskrivelse" og en klikkbar link i kolonnen "url". Bruk pseudoklasser for å gi annenhver rad forskjellig farge.
+<html lang="nb"> -->
+
+
+
+<head>
+
+	<meta charset="UTF-8"> 
+	<title>Om siden</title>
+	<!--<link rel="stylesheet" type="text/css" href="stiler/normalize.css"/> -->
+	<link rel="stylesheet" type="text/css" href="stiler/stilark.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+	<div id="master-gridartikkel">
+
+		<header>
+			<h1><a href="startside.html">Oblig 2</a></h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="linkearkiv.html">Linkearkiv</a></li>
+			</ul>
+		</nav>
+
+		<div class="artikkeltext">
+
+			<p><a href="startside.html">Startside</a> > Om nettsiden</p> <!--Breadcrumbs-->
+
+			<br /><br /><br />
+
+			<h2>OM DENNE NETTSIDEN</h2>
+			<br />
+			<p>
+				Jeg vil lage nettsidene maks 1024 px bred. Høyden varierer. <br />
+				Jeg ønsket et design som vekker interesse. Derfor blir man møtt av et stort bilde (som bakgrundbilde) sidene. 
+			</p>
+			<br /> <br />
+			
+			<h3>Startside:</h3>
+			<p>
+				Jeg ønsker ikke at headeren skal være høy slik at den tar opp masse plass. Lager den derfor ganske lav helt øverst. Denne er noe gjennomsiktig slik at bakgrunnen synes gjennom.
+				<img class="ombilde1" src="bilder/forside.png" alt="startsidebilde"/>
+				Headeren tar 1/3 av bredden helt øverst. Her skal det stå ”Oblig 2”. <br />
+				Ved siden av kommer navigasjon (menyen) som tar opp 2/3. Her er menyknappene. <br />
+				Headeren er på alle nettsidene. 
+				<br /><br />
+				På startsiden har jeg en introtextboks som tar opp 2/3 av bredden. Her skal det står info om timeplanen. Ved siden av har jeg en aside som tar opp 1/3, hvor det står info om viktige frister. Jeg ønsker at disse skal sees først på nettsiden, da dette er viktig informasjon. 
+				Under disse ligger det tre artikkelbokser. Disse tar 	hver opp 1/3. 
+				Margin og padding legges til for å dele ting mer fra hverandre og flytte innehold i boksene lenger inn. Dette for tydelig avgrensing og oversikt. 
+				<br /><br />
+				Footeren er uteseendemssig lik headeren (Noe gjennomsiktig).
+				Denne tar opp 3/3 av bredden på siden. Her ligger linken til ”om denne nettsiden”.</p> 
+				<br />
+			</p>
+
+			<h3>Artikkelside:</h3>
+			<p>
+				<img class="ombilde2" src="bilder/artikkelside.png" alt="artikkelsidebilde"/>
+				Artikkelsidene inneholder samme header og footer som startsiden. 
+				Her har jeg kun en artikkelboks midt på siden, som tar opp 3/3 av bredden. Jeg ønsker kun denne da teksten/infoen skal være i fokus. 
+				Margin on padding er legges til for å dele fra hverandre og trekke innholdet i boksen inn. <br />
+				Over artikkelboksen har jeg såkalte ”brad crumbs”. Her ser man stien man har gått.
+			</p>
+
+			<br />
+			<h3>Tabelloversikt over nettsider jeg har brukt:</h3>
+			<br />
+
+			<table>
+				<tr>
+					<th>Beskrivelse</th>
+					<th>URL</th>
+				</tr>
+				<tr>
+					<td>Hentet inspirasjon:</td>
+					<td><a href="https://www.localeadvisors.com/properties/">localadvisors.com</a></td>
+				</tr>
+				<tr>
+					<td>Hentet inspirasjon:</td>
+					<td><a href="http://www.flatslife.com/">Flatslife.com</a></td>
+				</tr>
+				<tr>
+					<td>Fått informasjon og hentet inspirasjon:</td>
+					<td><a href="http://www.webdesign-inspiration.com/web-designs?page=2">webdesign-inspiration.com</a></td>
+				</tr>
+				<tr>
+					<td>Funnet hjelp når jeg har stått fast:</td>
+					<td><a href="https://www.w3schools.com/">w3school.com</a></td>
+				</tr>
+			</table>
+
+		</div>
+
+		<footer>
+			<p>Les om siden <a href="omsiden.html">her</a></p>
+		</footer>
+
+	</div>
+	
+
+</body>
+
+
+</html>
