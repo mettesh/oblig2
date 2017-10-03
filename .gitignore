@@ -7,5 +7,5 @@
 #exclude everything png
 *.png
 
-#eclude everything DS_Store
+#exclude everything DS_Store
 *.DS_store
