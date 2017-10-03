@@ -8,23 +8,6 @@
   overflow: scroll;   
   font-family: arial;
 } 
-
-/*Stilsette a-tagger*/
-a:link { 
-  color: blue; 
-  text-decoration: underline;   
-} 
-a:visited { 
-  color: purple; 
-  text-decoration: underline; 
-} 
- 
-a:hover { 
-  text-decoration: underline; 
-}  
- 
-/*SPØRSMÅL: 
-  Hvordan få teksten til å ikke være gjennomsiktig?*/ 
  
 /*Header*/ 
 header { 
@@ -191,7 +174,7 @@ div.introtext {
 } 
 
 
-/*På om artikkelsiden og linkearkiv"*/
+/*På om artikkel-siden og linkearkiv"*/
 table {
 	border: 1px solid black;
 }
@@ -225,14 +208,15 @@ img.mathbilde {
   float: none;
 }
 
-/*Bilde på Git-artikkel*/
+/*Bilder på Git-artikkel*/
 img.gitbilde {
-  width: 40%;
+  width: 50%;
   float: left;
+  margin: 8px; /*Ønsker større mellomrom mellom bildene*/
 }
 
 
-/*Stilsette a-tagger*/
+/*Stilsatte a-tagger*/
 a:link { 
   color: blue; 
   text-decoration: underline;   
