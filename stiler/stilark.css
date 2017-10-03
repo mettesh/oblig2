@@ -164,6 +164,7 @@ div.introtext {
               			    "artikkeltext artikkeltext artikkeltext" 
              			      "footer footer footer"; 
 } 
+
 /*Artikkel på artikkelside*/ 
 .artikkeltext { 
   grid-area: artikkeltext; 
@@ -172,7 +173,6 @@ div.introtext {
   margin: 20px 20px 20px; 
   padding: 20px; 
 } 
-
 
 /*På om artikkel-siden og linkearkiv"*/
 table {
@@ -201,7 +201,6 @@ img.ombilde1, img.ombilde2 {
   width: 40%;
 }
 
-
 /*Bilde på Math-artikkel*/
 img.mathbilde {
   width: 40%;
@@ -214,7 +213,6 @@ img.gitbilde {
   float: left;
   margin: 8px; /*Ønsker større mellomrom mellom bildene*/
 }
-
 
 /*Stilsatte a-tagger*/
 a:link { 
@@ -229,9 +227,3 @@ a:visited {
 a:hover { 
   text-decoration: underline; 
 }   
-
- 
- 
- 
- 
- 
